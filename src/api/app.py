@@ -29,6 +29,4 @@ app.add_middleware(
 
 
 def start_app() -> None:
-    uvicorn.run(
-        "api.app:app", reload=True, host=settings.API_HOST, port=settings.API_PORT
-    )
+    uvicorn.run("api.app:app", reload=True, host=settings.API_HOST, port=settings.API_PORT)
